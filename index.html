@@ -2,42 +2,37 @@
 <html>
 
 <head>
-    <title>JS 3</title>
+    <title>JS 2</title>
 </head>
 
 <body>
 
     <script>
 
+        const firstName = 'avto';
+        const lastName = 'buadze';
+        const birthYear = 2001;
+        const currentYear = 2022;
 
-        // const firstName = 'avto';
-        // const lastName = 'buadze';
-        // const birthYear = 2001;
-        // const currentYear = 2022;
+        // Concatenation
+        let avtoInfo = "I'm " + firstName + " " + lastName + " " + (currentYear - birthYear) + " year's old.";
+        console.log(avtoInfo);
 
-        // const avtoInfo = "I'm " + firstName + " " + lastName + (currentYear - birthYear) + " year's old.";
+        // Template literals
+        avtoInfo = `I'm ${firstName} ${lastName} ${currentYear - birthYear} year's old.`;
+        console.log(avtoInfo);
 
-        // console.log(avtoInfo);
+        ////////////////////////////////////////////////////////////////
+        const age = 10;
+
+        if (age >= 18) {
+            console.log('avtos sheudzlia aigos martvis mowmoba 🚗');
+        } else {
+            console.log('avto jer pataraa, sheudzlia aigos martvis mowmoba ' + (18 - age) + ' welshi.');
+        }
 
 
-
-        // const firstName = 'avto';
-        // const lastName = 'buadze';
-        // const birthYear = 2001;
-        // const currentYear = 2022;
-
-        // const avtoInfo = `I'm ${firstName} ${lastName} ${currentYear - birthYear} year's old.`;
-
-        // console.log(avtoInfo);
-
-        // const age = 10;
-
-        // if(age >= 18) {
-        //     console.log('avtos sheudzlia aigos martvis mowmoba 🚗');
-        // } else {
-        //     console.log('avto jer pataraa, sheudzlia aigos martvis mowmoba ' + (18 - age) + ' welshi.');
-        // }
-
+        ////////////////////////////////////////////////////////////////
         const lomebi = (96 + 128 + 89) / 3;
         const spiloebi = (88 + 91 + 160) / 3;
         console.log(lomebi, spiloebi);
@@ -49,7 +44,6 @@
         } else if (spiloebi == lomebi) {
             console.log('damtavrda pre!');
         }
-
 
     </script>
 
